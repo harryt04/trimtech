@@ -11,14 +11,13 @@ function LandingPage() {
           <br />
           <ThemeSwitcher />
           <br />
-          <p className="text-center text-lg">
+          <p className="text-center text-sm">
             TrimTech is a purpose-built barbershop and salon booking and payment
             collection app. Built by barbers for barbers.
           </p>
           <br />
-          <p className="text-l"></p>
-          Coming soon.
           <br />
+          <p className="text-xl">Coming soon</p>
           <br />
           <Button variant={'default'}>
             <Link href="https://forms.gle/grPSfC6ZdT7c2UNi8">
