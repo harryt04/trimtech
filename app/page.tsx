@@ -11,8 +11,7 @@ export default function Home() {
       </SignedOut>
 
       <SignedIn>
-        <SideNav />
-        <p>Welcome to trimtech bitches</p>
+        <p>default route</p>
         {/* <div
           className={cn(
             'flex min-h-screen flex-col items-center justify-center gap-4 px-10 py-20',
