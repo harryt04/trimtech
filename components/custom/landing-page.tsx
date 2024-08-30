@@ -19,9 +19,7 @@ function LandingPage() {
               Join the waitlist here
             </Link>
           </Button>
-          <br />
-          <br />
-          <Button variant={'link'}>
+          <Button variant={'link'} className="my-4">
             <Link href="/login">Sign in to the free and open beta</Link>
           </Button>
         </div>
