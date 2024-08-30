@@ -7,18 +7,13 @@ function LandingPage() {
     <div>
       <div className="flex h-screen flex-col items-center justify-center">
         <div className="flex max-w-2xl flex-col items-center justify-center">
-          <h1 className="text-4xl font-bold"> TrimTech </h1>
-          <br />
+          <h1 className="py-8 text-4xl font-bold"> TrimTech </h1>
           <ThemeSwitcher />
-          <br />
-          <p className="text-center text-sm">
+          <p className="py-8 text-center text-sm">
             TrimTech is a purpose-built barbershop and salon booking and payment
             collection app. Built by barbers for barbers.
           </p>
-          <br />
-          <br />
-          <p className="text-xl">Coming soon</p>
-          <br />
+          <p className="py-8 text-xl">Coming soon</p>
           <Button variant={'default'}>
             <Link href="https://forms.gle/grPSfC6ZdT7c2UNi8">
               Join the waitlist here
