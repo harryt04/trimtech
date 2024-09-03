@@ -1,3 +1,9 @@
+import { BookingsTable } from '@/components/custom/bookingsTable'
+
 export default function Book() {
-  return <div>Bookings</div>
+  return (
+    <>
+      <BookingsTable />
+    </>
+  )
 }
