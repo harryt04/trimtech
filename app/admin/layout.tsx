@@ -11,7 +11,7 @@ export default function Layout({ children }) {
 
       <SignedIn>
         <Navbar />
-        <div className="mt-16">
+        <div className="mt-14 p-4">
           <AdminPanelLayout>{children}</AdminPanelLayout>
         </div>
       </SignedIn>

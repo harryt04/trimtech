@@ -1,4 +1,11 @@
-import { Users, Settings, Bookmark, LayoutGrid, LucideIcon } from 'lucide-react'
+import {
+  Users,
+  Settings,
+  Bookmark,
+  LayoutGrid,
+  LucideIcon,
+  CalendarCheck,
+} from 'lucide-react'
 
 type Submenu = {
   href: string
@@ -34,8 +41,8 @@ export function getMenuList(pathname: string): Group[] {
         {
           href: '/admin/bookings',
           label: 'Bookings',
-          active: pathname.includes('/categories'),
-          icon: Bookmark,
+          active: pathname.includes('/admin/bookings'),
+          icon: CalendarCheck,
           submenus: [],
         },
       ],
