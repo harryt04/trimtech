@@ -1,17 +1,19 @@
 import { LandingPage } from '@/components/custom/landing-page'
 import { SignedIn, SignedOut } from '@clerk/nextjs'
+import { currentUser, User } from '@clerk/nextjs/server'
+import { redirect } from 'next/navigation'
 
-export default function Home() {
-  // Remove 'use server' since Home should be a client component
+export default async function Home() {
+  const user: User | null = await currentUser()
+  if (!!user) {
+    redirect('/admin/dashboard')
+  }
+
   return (
     <>
       <SignedOut>
         <LandingPage />
       </SignedOut>
-
-      <SignedIn>
-        <p>default route</p>
-      </SignedIn>
     </>
   )
 }

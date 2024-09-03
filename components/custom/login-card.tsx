@@ -22,7 +22,7 @@ async function LoginCard() {
         )}
       >
         <SignedOut>
-          <RedirectToSignIn redirectUrl={'/admin'} />
+          <RedirectToSignIn redirectUrl={'/admin/dashboard'} />
         </SignedOut>
 
         <SignedIn>
