@@ -40,47 +40,48 @@ import {
   TableRow,
 } from '@/components/ui/table'
 
-const data: Payment[] = [
+const data: Booking[] = [
   {
     id: 'm5gr84i9',
-    amount: 316,
-    status: 'success',
+    charge: 316,
+    type: 'success',
     email: 'ken99@yahoo.com',
   },
   {
     id: '3u1reuv4',
-    amount: 242,
-    status: 'success',
+    charge: 242,
+    type: 'success',
     email: 'Abe45@gmail.com',
   },
   {
     id: 'derv1ws0',
-    amount: 837,
-    status: 'processing',
+    charge: 837,
+    type: 'processing',
     email: 'Monserrat44@gmail.com',
   },
   {
     id: '5kma53ae',
-    amount: 874,
-    status: 'success',
+    charge: 874,
+    type: 'success',
     email: 'Silas22@gmail.com',
   },
   {
     id: 'bhqecj4p',
-    amount: 721,
-    status: 'failed',
+    charge: 721,
+    type: 'failed',
     email: 'carmella@hotmail.com',
   },
 ]
 
-export type Payment = {
+export type Booking = {
   id: string
-  amount: number
-  status: 'pending' | 'processing' | 'success' | 'failed'
-  email: string
+  charge: number
+  type: 'recurring' | 'one-time'
+  startDate: Date
+  nextAppointmentDate?: Date
 }
 
-export const columns: ColumnDef<Payment>[] = [
+export const columns: ColumnDef<Booking>[] = [
   {
     id: 'select',
     header: ({ table }) => (

@@ -21,7 +21,7 @@ export function Sidebar() {
       )}
     >
       <SidebarToggle isOpen={sidebar?.isOpen} setIsOpen={sidebar?.setIsOpen} />
-      <div className="relative flex h-full flex-col overflow-y-auto px-3 py-4 shadow-md dark:shadow-zinc-800">
+      <div className="relative flex h-full flex-col overflow-y-auto px-3 pb-4 pt-2 shadow-md dark:shadow-zinc-800">
         <Button
           className={cn(
             'mb-1 transition-transform duration-300 ease-in-out',
@@ -30,18 +30,22 @@ export function Sidebar() {
           variant="link"
           asChild
         >
-          <Link href="/admin/dashboard" className="flex items-center gap-2">
-            <Scissors className="mr-1 h-6 w-6" />
-            <h1
+          <Link
+            href="/admin/bookings"
+            className="flex items-center justify-center gap-2 pb-2"
+          >
+            <Button
               className={cn(
                 'whitespace-nowrap text-lg font-bold transition-[transform,opacity,display] duration-300 ease-in-out',
                 sidebar?.isOpen === false
                   ? 'hidden -translate-x-96 opacity-0'
                   : 'translate-x-0 opacity-100',
               )}
+              variant={'link'}
             >
+              <Scissors className="mr-1 h-6 w-6" />
               TrimTech
-            </h1>
+            </Button>
           </Link>
         </Button>
         <Menu isOpen={sidebar?.isOpen} />

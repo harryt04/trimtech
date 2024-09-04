@@ -22,11 +22,11 @@ export function SheetMenu() {
       <SheetContent className="flex h-full flex-col px-3 sm:w-72" side="left">
         <SheetHeader>
           <Button
-            className="flex items-center justify-center pb-2 pt-1"
+            className="flex items-center self-center pb-2 pt-1"
             variant="link"
             asChild
           >
-            <Link href="/admin/dashboard" className="flex items-center gap-2">
+            <Link href="/admin/dashboard" className="flex gap-2 self-center">
               <PanelsTopLeft className="mr-1 h-6 w-6" />
               <SheetTitle className="text-lg font-bold">TrimTech</SheetTitle>
             </Link>
