@@ -7,8 +7,8 @@ function LandingPage() {
     <div>
       <div className="flex h-screen flex-col items-center justify-center">
         <div className="flex max-w-2xl flex-col items-center justify-center">
-          <h1 className="py-8 text-4xl font-bold"> TrimTech </h1>
           <ThemeSwitcher />
+          <h1 className="py-8 text-4xl font-bold"> TrimTech </h1>
           <p className="py-8 text-center text-sm">
             TrimTech is a purpose-built barbershop and salon booking and payment
             collection app. Built by barbers for barbers.
