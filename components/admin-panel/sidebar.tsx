@@ -21,7 +21,7 @@ export function Sidebar() {
       )}
     >
       <SidebarToggle isOpen={sidebar?.isOpen} setIsOpen={sidebar?.setIsOpen} />
-      <div className="relative flex h-full flex-col overflow-y-auto px-3 pb-4 pt-2 shadow-md dark:shadow-zinc-800">
+      <div className="relative flex h-full flex-col overflow-y-auto px-3 pb-5 pt-2 shadow dark:shadow-secondary">
         <Button
           className={cn(
             'mb-1 transition-transform duration-300 ease-in-out',
@@ -36,15 +36,20 @@ export function Sidebar() {
           >
             <Button
               className={cn(
-                'whitespace-nowrap text-lg font-bold transition-[transform,opacity,display] duration-300 ease-in-out',
-                sidebar?.isOpen === false
-                  ? 'hidden -translate-x-96 opacity-0'
-                  : 'translate-x-0 opacity-100',
+                'whitespace-nowrap text-lg font-bold transition-[transform,opacity,display] duration-300 ease-in-out dark:text-secondary',
               )}
               variant={'link'}
             >
               <Scissors className="mr-1 h-6 w-6" />
-              TrimTech
+              <span
+                className={cn(
+                  sidebar?.isOpen === false
+                    ? 'hidden -translate-x-96 opacity-0'
+                    : 'translate-x-0 opacity-100',
+                )}
+              >
+                TrimTech
+              </span>
             </Button>
           </Link>
         </Button>
