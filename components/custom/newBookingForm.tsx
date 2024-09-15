@@ -91,7 +91,7 @@ export function NewBookingForm() {
                     <Button
                       variant={'outline'}
                       className={cn(
-                        'w-full pl-3 text-left font-normal',
+                        'w-3/12 pl-3 text-left font-normal',
                         !field.value && 'text-muted-foreground',
                       )}
                     >
@@ -104,7 +104,7 @@ export function NewBookingForm() {
                     </Button>
                   </FormControl>
                 </PopoverTrigger>
-                <PopoverContent className="w-auto p-0">
+                <PopoverContent className="ml-4 w-auto p-0">
                   <div className="flex">
                     <Calendar
                       mode="single"
