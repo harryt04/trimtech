@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { MenuIcon, PanelsTopLeft } from 'lucide-react'
+import { MenuIcon, Scissors } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
 import { Menu } from '@/components/admin-panel/menu'
@@ -22,13 +22,15 @@ export function SheetMenu() {
       <SheetContent className="flex h-full flex-col px-3 sm:w-72" side="left">
         <SheetHeader>
           <Button
-            className="flex items-center self-center pb-2 pt-1"
+            className="flex items-center self-center pb-2 pt-1 dark:text-secondary"
             variant="link"
             asChild
           >
-            <Link href="/admin/dashboard" className="flex gap-2 self-center">
-              <PanelsTopLeft className="mr-1 h-6 w-6" />
-              <SheetTitle className="text-lg font-bold">TrimTech</SheetTitle>
+            <Link href="/admin/bookings" className="flex gap-2 self-center">
+              <Scissors className="mr-1 h-6 w-6" />
+              <SheetTitle className="text-lg font-bold text-primary dark:text-secondary">
+                TrimTech
+              </SheetTitle>
             </Link>
           </Button>
         </SheetHeader>
