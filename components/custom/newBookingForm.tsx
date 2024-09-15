@@ -12,6 +12,7 @@ import { Calendar } from '@/components/ui/calendar'
 import {
   Form,
   FormControl,
+  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -90,7 +91,7 @@ export function NewBookingForm() {
                     <Button
                       variant={'outline'}
                       className={cn(
-                        'w-auto pl-3 text-left font-normal',
+                        'w-full pl-3 text-left font-normal',
                         !field.value && 'text-muted-foreground',
                       )}
                     >
@@ -103,7 +104,7 @@ export function NewBookingForm() {
                     </Button>
                   </FormControl>
                 </PopoverTrigger>
-                <PopoverContent className="w-4 p-0">
+                <PopoverContent className="w-auto p-0">
                   <div className="flex">
                     <Calendar
                       mode="single"
